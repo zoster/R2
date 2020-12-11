@@ -5,7 +5,8 @@
         "core": "*",
         "radio": "*",
         "microphone": "*",
-        "pxt-TPBot": "github:elecfreaks/pxt-tpbot#v1.1.4"
+        "pxt-TPBot": "github:elecfreaks/pxt-tpbot#v1.1.4",
+        "R2": "github:zoster/r2#2ac4541b5a06d46458f01218e6823d9fbb719c3d"
     },
     "files": [
         "main.blocks",

@@ -1,8 +1,37 @@
 basic.showIcon(IconNames.Happy)
+TPBot.headlightColor(0x00ffff)
+TPBot.setWheels(100, -100)
+basic.pause(100)
+for (let index = 0; index <= 6; index++) {
+    basic.showLeds(`
+        . # . # .
+        . . . . .
+        . . . . .
+        # . . . #
+        . # # # .
+        `)
+    basic.showLeds(`
+        # . . . #
+        . . . . .
+        . . . . .
+        # . . . #
+        . # # # .
+        `)
+    basic.showLeds(`
+        . . . . .
+        # . . . #
+        . . . . .
+        # . . . #
+        . # # # .
+        `)
+    basic.showLeds(`
+        . . . . .
+        . # . # .
+        . . . . .
+        # . . . #
+        . # # # .
+        `)
+}
 basic.forever(function () {
-    TPBot.setTravelSpeed(TPBot.DriveDirection.Forward, 50)
-    if (TPBot.sonarJudge(TPBot.Sonarjudge.Less, 15)) {
-        TPBot.setTravelTime(TPBot.DriveDirection.Backward, 50, 1)
-        TPBot.setTravelTime(TPBot.DriveDirection.Left, 50, 0.5)
-    }
+	
 })
